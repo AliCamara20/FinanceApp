@@ -22,17 +22,26 @@ img{
   --budget-dining: #f1d8b3;
   --budget-ent: #6a8e8e;
   --budget-personal: #4a4a4a;
-  --primary-heading: 1.625rem;
-  --secondary-heading: 1.125rem;
+  --px24: 1.5rem;
+  --pg-font: 1.125rem;
   --section-heading: 1.5rem;
-  --transaction-amount: .875rem;
 
 }
 
 h1{
     margin-top: 0;
-    color: #fff;
 }
+
+p{
+    font-size: var(--pg-font);
+    opacity: .7;
+}
+
+h2{
+    font-size: var(--px24);
+}
+
+
 
 header{
     background: var(--sidebar-color);
