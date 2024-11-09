@@ -309,7 +309,38 @@ header{
 }
     
 
+.bill-info{
+    padding: .5em 1em;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: relative;
+}
 
+.bill-info + .bill-info{
+    margin-top: 30px;
+}
+
+.bill-info::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 5px;
+    background-color: var(--budget-ent);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.upcoming::before{
+    background: var(--budget-dining);
+}
+
+.due::before{
+    background: var(--budget-bills);
+}
 
 
  
