@@ -350,9 +350,18 @@ header{
 }
 
 
- 
+ .total-saved, .budget-info, .bill-info:first-child, .transaction-details{
+    margin: 15px 0 5px 0;
+    
+ }
+
+ .section-header h2{
+    margin-top: 0;
+ }
 
 @media (min-width: 700px){
+
+    
     .tabs .desc{
         display: block;
     }
@@ -377,6 +386,8 @@ header{
     .detail + .detail{
         margin-left: 30px;
     }
+
+    
 }
 
 @media (min-width: 1200px){
