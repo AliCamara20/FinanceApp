@@ -121,6 +121,8 @@ header{
 .tabs .desc{
     font-size: 1rem;
     color: #fff;
+    display: none;
+    
 }
 
 
@@ -161,9 +163,7 @@ header{
 
     .nav_list{
         display: block;
-        margin: 0;
-        padding: 0;
-
+        
     }
 
     .tabs{
@@ -185,7 +185,7 @@ header{
     }
 
     .nav_item{
-        padding: .5em 0;
+        padding: .5em 1em;
     }
 
     .nav_item + .nav_item{
@@ -223,17 +223,9 @@ header{
         height: 100%;
         background-color: var(--budget-bills);
     }
-
-    
-
-    
-
-    
-
-    
-
-    
-
+    .tabs .desc{
+        display: block;
+    }
     
 }
 
