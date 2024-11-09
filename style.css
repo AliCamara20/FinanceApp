@@ -45,6 +45,9 @@ header{
     border-top-left-radius: 20px;   
 }
 
+
+
+
 .title{
     display: none;
 }
@@ -59,19 +62,29 @@ header{
     font-size: .9rem;  
 }
 
+
+.nav-container{
+    width: 90%;
+    max-width: 1200px;
+    margin:  0 auto;
+}
+
 .nav_item{
     text-align: center;
     margin-top: 10px;
     color: #fff;
-
     
 }
+
+
 
 .active{
     background-color: #fff;
     position: relative;
     border-top-right-radius: 10px;
-    border-top-left-radius: 10px;  
+    border-top-left-radius: 10px; 
+    padding: 0 .5em;
+
 }
 
 .active .tabs .desc{
@@ -93,15 +106,11 @@ header{
 }
 
 
-
-
-
-
-
 .tabs{
     background: transparent;
     border: none;
-    padding: .5em 1em;
+    padding: .2em 0;
+    
 
 }
 
@@ -112,15 +121,9 @@ header{
 .tabs .desc{
     font-size: 1rem;
     color: #fff;
-    margin-top: 5px;
 }
 
-.nav-container{
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    
-}
+
 
 .sections{
     padding: 3em 0;
