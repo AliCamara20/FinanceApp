@@ -22,8 +22,8 @@ img{
   --budget-dining: #f1d8b3;
   --budget-ent: #6a8e8e;
   --budget-personal: #4a4a4a;
-  --px24: 1.5rem;
-  --pg-font: 1.125rem;
+  --px24: .8rem;
+  --pg-font: .6rem;
   --section-heading: 1.5rem;
   --amount: 1rem;
 
@@ -147,7 +147,6 @@ header{
 
 .sections{
     padding: 3em 0;
-    border: 2px solid var(--budget-personal);
     transition: .5s ease;
 }
 
@@ -195,6 +194,7 @@ header{
 .section-header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .view-more{
@@ -233,7 +233,11 @@ header{
 
 .petition p{
     white-space: nowrap;
-    font-size: 1rem;
+    font-size:var(--pg-font);
+}
+
+.petition p h2{
+    font-size: .5rem;
 }
 
 .savings{
@@ -263,7 +267,7 @@ header{
 }
 
 .name-image h2{
-    font-size: 1.1123rem;
+    font-size: var(--px24)
 }
 .flex{
     display: flex;
@@ -316,10 +320,13 @@ header{
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .bill-info + .bill-info{
     margin-top: 30px;
+
 }
 
 .bill-info::before{
