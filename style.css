@@ -25,6 +25,7 @@ img{
   --px24: 1.5rem;
   --pg-font: 1.125rem;
   --section-heading: 1.5rem;
+  --amount: 1rem;
 
 }
 
@@ -41,6 +42,10 @@ h2{
     font-size: var(--px24);
 }
 
+.amount{
+    font-size: var(--amount);
+}
+
 
 header{
     background: var(--sidebar-color);
@@ -51,6 +56,7 @@ header{
     box-sizing: border-box; 
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;   
+    z-index: 1000;
 }
 
 .title{
@@ -175,6 +181,128 @@ header{
 .detail + .detail{
     margin-top: 20px;
 }
+
+.section{
+    background: #fff;
+    padding: 1.8em 1.5em;
+    border-radius: 20px;
+}
+
+.section{
+    margin-top: 20px;
+}
+
+.section-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.view-more{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.total-saved{
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+
+}
+
+.money-bag{
+    width: 50px;
+    height: 50px;
+    margin-right: 30px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.petition-one, .petition-two{
+    width: 40%;
+}
+
+.petition{
+    padding: 0 1em;
+}
+
+.savings{
+    border-left: 4px solid var(--budget-ent);
+}
+
+.ticket{
+    border-left: 4px solid var(--budget-personal);
+}
+
+.bills{
+    border-left: 4px solid var(--budget-bills);
+}
+
+.bed{
+    border-left: 4px solid var(--budget-dining);
+}
+
+.savings{
+    border-left: 4px solid var(--budget-ent);
+}
+
+.transaction-details{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.name-image h2{
+    font-size: 1.1123rem;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.name-image img{
+    width: 60px;
+    height:60px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+
+ .budget-info .budget_pie-chart{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: conic-gradient(#6a8e8e 0%, #6a8e8e 10%, #5ec8e5 10%, #5ec8e5 70%,#d64545 70%, #d64545 85%, #4a4a4a 85%, #4a4a4a 100% );
+    border-radius: 50%;
+    margin:  0 auto;
+}
+
+.budget_pie-chart::after{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.budget_pie-chart > *{
+    z-index: 200;
+    text-align: center;
+}
+    
+
+
+
+
  
 
 @media (min-width: 700px){
@@ -189,6 +317,19 @@ header{
      .active .tabs{
         padding: .5em 0;
     }
+
+    .details{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .detail{
+        width: 100%;
+    }
+
+    .detail + .detail{
+        margin-left: 30px;
+    }
 }
 
 @media (min-width: 1200px){
@@ -196,8 +337,7 @@ header{
         display: block;
         padding: 0 .5em;
         margin-bottom: 1em;
-        position: relative;
-        
+        position: relative;    
     }
 
     header{
