@@ -41,12 +41,9 @@ header{
     bottom: 0;
     left: 0;
     box-sizing: border-box; 
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;   
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;   
 }
-
-
-
 
 .title{
     display: none;
@@ -59,7 +56,9 @@ header{
     list-style: none;
     display: flex;
     justify-content: space-between;  
-    font-size: .9rem;  
+    width: 90%;
+    font-size: .9rem; 
+    margin: 0 auto;
 }
 
 
@@ -73,6 +72,7 @@ header{
     text-align: center;
     margin-top: 10px;
     color: #fff;
+    padding: 0 1.2em;
     
 }
 
@@ -83,8 +83,14 @@ header{
     position: relative;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px; 
-    padding: 0 .5em;
+    padding: 0 1.5em;
 
+
+}
+
+
+ .active .tabs{
+    padding: .5em 0;
 }
 
 .active .tabs .desc{
@@ -125,10 +131,10 @@ header{
     
 }
 
-
-
 .sections{
     padding: 3em 0;
+    border: 2px solid var(--budget-personal);
+    transition: .5s ease;
 }
 
 .container{
@@ -137,12 +143,31 @@ header{
     margin: 0 auto;
 }
 
+.minimize{
+    display: none;
+}
+ 
 
-@media (min-width: 800px){
+@media (min-width: 700px){
+    .tabs .desc{
+        display: block;
+    }
+
+    .active{
+        padding: 0 1.8em;
+    }
+
+     .active .tabs{
+        padding: .5em 0;
+    }
+}
+
+@media (min-width: 1200px){
     .title{
         display: block;
         padding: 0 .5em;
         margin-bottom: 1em;
+        position: relative;
         
     }
 
@@ -157,13 +182,12 @@ header{
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px; 
         border-top-left-radius: 0;
-
-
+        transition: .5s ease;
     }
 
     .nav_list{
         display: block;
-        
+        margin: 0;
     }
 
     .tabs{
@@ -180,7 +204,7 @@ header{
     }
 
     .tabs .desc{
-        font-size: 1rem;
+        font-size: 1.2rem;
         color: #fff;
     }
 
@@ -195,8 +219,57 @@ header{
     .sections{
         margin-left: 20%;
     }
+     .minimize{
+        display: block;
+        margin: auto;
+        margin-top: 100px;
+        text-align: center;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+       white-space: nowrap;
 
 
+     }
+    
+
+    .minimize  .min{
+        position: relative;
+        font-size: 1.2rem;
+        color: #fff;
+    }
+
+    .min::before{
+        content: ' \2190  minimize menu';
+        left: 0;
+        margin-right: .8em;
+    }
+
+    
+
+    .minimize-header{
+        width: 5%;
+    }
+    .expand-main {
+        margin-left: 5%;
+    }
+
+
+    .minimize-header h1{
+        display: none;
+    }
+
+    .minimize-header .nav_list .nav_item .tabs .desc{
+        display: none;
+    }
+
+    .minimize-header .nav_list .active .tabs .desc{
+    display: none;
+    }
 
     .active{
         background-color: #fff;
@@ -225,6 +298,22 @@ header{
     }
     .tabs .desc{
         display: block;
+    }
+
+
+    .minimize-header .nav_item  .active{
+        color: green;
+    }
+
+    .minimize-header .nav_list .active::after{
+        bottom: 0;
+        left: 0;
+    }
+
+    .minimize-header .minimize .min::before{
+       content: '\2192';
+       font-size: 2rem;
+       margin: 0 auto;
     }
     
 }

@@ -1,19 +1,21 @@
 
-const minimizeBtn = document.getElementById("minimize");
-const descriptions = document.querySelector(".desc");
+const minimizeBtn = document.querySelector(".minimize");
+const sectionLabel = document.querySelectorAll(".desc");
 const navItem = document.querySelector("header");
+const header = document.querySelector("header");
+const mainSection = document.querySelector('.sections');
 
-function close(){
-    for (let index = 0; index < descriptions.length; index++) {
-        const element = descriptions[index];
-        element.style.display = "none";
-        
-    }
-}
+
 
 minimizeBtn.addEventListener('click', function(){
-    close();
-    navItem.style.width = 'fit-content';
+    
+    for (let index = 0; index <sectionLabel.length; index++) {
+        const element = sectionLabel[index];
+        element.classList.toggle("close");
+    }
+
+    header.classList.toggle('minimize-header');
+    mainSection.classList.toggle('expand-main')
 });
 
 
