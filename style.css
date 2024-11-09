@@ -233,6 +233,7 @@ header{
 
 .petition p{
     white-space: nowrap;
+    font-size: 1rem;
 }
 
 .savings{
@@ -269,12 +270,16 @@ header{
     align-items: center;
 }
 .name-image img{
-    width: 60px;
-    height:60px;
+    width: 50px;
+    height:50px;
     object-fit: cover;
     border-radius: 50%;
     margin-right: 20px;
 }
+
+ .date{
+    white-space: nowrap;
+ }
 
 
  .budget-info .budget_pie-chart{
