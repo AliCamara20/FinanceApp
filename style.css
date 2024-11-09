@@ -22,8 +22,8 @@ img{
   --budget-dining: #f1d8b3;
   --budget-ent: #6a8e8e;
   --budget-personal: #4a4a4a;
-  --px24: .8rem;
-  --pg-font: .6rem;
+  --px24: .7rem;
+  --pg-font: 1rem;
   --section-heading: 1.5rem;
   --amount: 1rem;
 
@@ -32,6 +32,8 @@ img{
 h1{
     margin-top: 0;
 }
+
+
 
 p{
     font-size: var(--pg-font);
@@ -266,6 +268,14 @@ header{
     list-style: none;
 }
 
+.trans-item{
+    border-bottom: 1px solid #ccc;
+}
+
+.trans-item:last-child{
+    border-bottom: none;
+}
+
 .name-image h2{
     font-size: var(--px24)
 }
@@ -349,19 +359,24 @@ header{
     background: var(--budget-bills);
 }
 
-
- .total-saved, .budget-info, .bill-info:first-child, .transaction-details{
+.details h2, .total-saved h2, .budget_pie-chart h2{
+    font-size: 1.3rem;
+}
+ .total-saved, .budget-info, .bill_items, .transaction-details{
     margin: 15px 0 5px 0;
     
  }
 
- .section-header h2{
-    margin-top: 0;
+ .section-label{
+    font-size: 1rem;
  }
 
 @media (min-width: 700px){
 
-    
+    h2{
+        --px24: 1.25rem;
+        font-size: 1.25rem;
+    }
     .tabs .desc{
         display: block;
     }
@@ -395,8 +410,10 @@ header{
         display: block;
         padding: 0 .5em;
         margin-bottom: 1em;
-        position: relative;    
+        position: relative; 
+        color: #fff;   
     }
+    
 
     header{
         position: fixed;
@@ -459,9 +476,7 @@ header{
         left: 50%;
         transform: translateX(-50%);
        white-space: nowrap;
-
-
-     }
+    }
     
 
     .minimize  .min{
@@ -542,6 +557,8 @@ header{
        font-size: 2rem;
        margin: 0 auto;
     }
+
+    
     
 }
 
