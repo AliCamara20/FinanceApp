@@ -279,8 +279,8 @@ header{
 
  .budget-info .budget_pie-chart{
     position: relative;
-    width: 60%;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -292,8 +292,8 @@ header{
 .budget_pie-chart::after{
     content: '';
     position: absolute;
-    width: 60%;
-    height: 60%;
+    width: 70%;
+    height: 70%;
     background-color: white;
     border-radius: 50%;
 }
