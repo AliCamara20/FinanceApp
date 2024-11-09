@@ -231,6 +231,10 @@ header{
     padding: 0 1em;
 }
 
+.petition p{
+    white-space: nowrap;
+}
+
 .savings{
     border-left: 4px solid var(--budget-ent);
 }
@@ -275,8 +279,8 @@ header{
 
  .budget-info .budget_pie-chart{
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 60%;
+    height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -288,8 +292,8 @@ header{
 .budget_pie-chart::after{
     content: '';
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 60%;
+    height: 60%;
     background-color: white;
     border-radius: 50%;
 }
