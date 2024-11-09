@@ -42,7 +42,6 @@ h2{
 }
 
 
-
 header{
     background: var(--sidebar-color);
     position: fixed;
@@ -152,8 +151,29 @@ header{
     margin: 0 auto;
 }
 
+
+
 .minimize{
     display: none;
+}
+.details > div{
+    border-radius: 20px;
+}
+.min-container{
+    padding: 1rem 1.5rem;
+    
+}
+.current-balance{
+    background-color: var(--sidebar-color);
+    color: #fff;
+}
+
+.income, .expense{
+    background-color: #fff;
+}
+
+.detail + .detail{
+    margin-top: 20px;
 }
  
 
