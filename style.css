@@ -89,19 +89,18 @@ header{
     margin-top: 10px;
     color: #fff;
     padding: 0 1.2em;
+    cursor: pointer;
     
 }
 
 
 
-.active{
+.nav_list .nav_item.active{
     background-color: #fff;
     position: relative;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px; 
     padding: 0 1.5em;
-
-
 }
 
 
@@ -384,7 +383,7 @@ header{
         display: block;
     }
 
-    .active{
+    .nav_list .active{
         padding: 0 1.8em;
     }
 
@@ -461,7 +460,8 @@ header{
     .nav_item + .nav_item{
         margin-top: 10px;
     }
-
+    
+   
     .sections{
         margin-left: 20%;
     }
@@ -516,11 +516,8 @@ header{
     }
 
     .active{
-        background-color: #fff;
-        position: relative;
-        border-top-right-radius: 10px;
-        border-top-left-radius: 0;
-        border-bottom-right-radius: 10px;  
+        border-top-left-radius: 0; 
+        border-bottom-right-radius: 10px;
     }
     
     .active .tabs .desc{
@@ -573,8 +570,8 @@ header{
         justify-content: flex-start;
         align-items: center;
     }
-    .budget_pie-chart{
-        margin-right: 50px;
+    .budget-info .budget_pie-chart{
+        margin-right: 10px;
     }
     
     .pots_row{
@@ -588,9 +585,7 @@ header{
     .total-saved, .total-petition{
         width: 48%;
         
-    }
-   
-    
+    }    
     
 }
 

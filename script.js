@@ -4,35 +4,38 @@ const sectionLabel = document.querySelectorAll(".desc");
 const navItem = document.querySelector("header");
 const header = document.querySelector("header");
 const mainSection = document.querySelector('.sections');
+const sections = document.querySelectorAll(".section");
 
 
 
 minimizeBtn.addEventListener('click', function(){
     
-    for (let index = 0; index <sectionLabel.length; index++) {
-        const element = sectionLabel[index];
-        element.classList.toggle("close");
-    }
+    
 
     header.classList.toggle('minimize-header');
     mainSection.classList.toggle('expand-main')
 });
 
+ 
 
-function displaySide(evt){
-    var tabs; 
-    
-    tabs = document.getElementsByClassName("nav_items");
+function displaySide(evt, section){
 
-    for( let i = 0; i < tabs.length; i++){
-        tabs[i].className = tabs[i].className.replace('active', ' ');
+    var tabs, i; 
 
+    tabs = document.getElementsByClassName("nav_item");
+
+    for (i = 0; i < tabs.length; i++) {
+        const element= tabs[i];
+        element.className = element.className.replace("active", "")
+        
     }
+    
+
     evt.currentTarget.className += " active";
 
-
-
 }
+
+ document.getElementById("default").click();
 
 
 
