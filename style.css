@@ -13,7 +13,7 @@ img{
 }
 
 :root{
-  --primary-color: rgb(238, 229, 230);
+  --primary-color: rgb(247, 226, 228);
   --secondary-color: #fff;
   --sidebar-color: #2b2b2b;
   --transaction-postive: #0b9d3b;
@@ -223,6 +223,7 @@ header{
 .row{
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .petition-one, .petition-two{
@@ -373,9 +374,11 @@ header{
 
 @media (min-width: 700px){
 
-    h2{
-        --px24: 1.25rem;
+    .section-label{
         font-size: 1.25rem;
+    }
+    .name-image .name{
+        font-size: 1.125rem;
     }
     .tabs .desc{
         display: block;
@@ -414,7 +417,6 @@ header{
         color: #fff;   
     }
     
-
     header{
         position: fixed;
         top: 0;
@@ -557,7 +559,37 @@ header{
        font-size: 2rem;
        margin: 0 auto;
     }
+   
+    .pots_transactions{
+        width: 56%;
+    }
 
+    .budgets_rec-bills{
+        width: 42%;
+    }
+
+    .budget-info{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .budget_pie-chart{
+        margin-right: 50px;
+    }
+    
+    .pots_row{
+        display: flex;
+        justify-content: space-between;
+    }
+    .total{
+        display: block;
+    }
+
+    .total-saved, .total-petition{
+        width: 48%;
+        
+    }
+   
     
     
 }
