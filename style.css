@@ -3,7 +3,7 @@
 }
 body{
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Oswald", sans-serif;
     background: var(--primary-color);
     
 }
@@ -44,6 +44,9 @@ h2{
     font-size: var(--px24);
 }
 
+.main-heading{
+    font-size: 2rem;
+}
 .amount{
     font-size: var(--amount);
 }
@@ -280,8 +283,11 @@ header{
     border-bottom: none;
 }
 
-.name-image h2{
-    font-size: var(--px24)
+
+
+.name{
+    font-size: .9rem;
+     
 }
 .flex{
     display: flex;
