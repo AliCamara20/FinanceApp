@@ -1,393 +1,418 @@
 *{
-    box-sizing: border-box;
+box-sizing: border-box;
 }
 body{
-    margin: 0;
-    font-family: "Oswald", sans-serif;
-    background: var(--primary-color);
-    
+margin: 0;
+font-family: "Oswald", sans-serif;
+background: var(--primary-color);
+overflow-y: auto;
+
 }
 
 img{
-    max-width: 100%;
+max-width: 100%;
 }
 
 :root{
-  --primary-color: rgb(247, 226, 228, .5);
-  --secondary-color: #fff;
-  --sidebar-color: #2b2b2b;
-  --transaction-postive: #0b9d3b;
-  --transaction-negative: #d64545;
-  --budget-bills: #5ec8e5;
-  --budget-dining: #f1d8b3;
-  --budget-ent: #6a8e8e;
-  --budget-personal: #4a4a4a;
-  --px24: .7rem;
-  --pg-font: 1rem;
-  --section-heading: 1.5rem;
-  --amount: 1rem;
+--primary-color: #e9f7ef;
+--secondary-color: #fff;
+--sidebar-color: #2b2b2b;
+--transaction-postive: #0b9d3b;
+--transaction-negative: #d64545;
+--budget-bills: #5ec8e5;
+--budget-dining: #f1d8b3;
+--budget-ent: #6a8e8e;
+--budget-personal: #4a4a4a;
+--px24: .7rem;
+--pg-font: 1rem;
+--section-heading: 1.5rem;
+--amount: 1rem;
 
 }
 
 h1{
-    margin-top: 0;
+margin-top: 0;
 }
 
 
 
 p{
-    font-size: var(--pg-font);
-    opacity: .7;
+font-size: var(--pg-font);
+opacity: .7;
 }
 
 h2{
-    font-size: var(--px24);
+font-size: var(--px24);
 }
 
 .main-heading{
-    font-size: 2rem;
+font-size: 2rem;
 }
 .amount{
-    font-size: var(--amount);
+font-size: var(--amount);
 }
 
 
 header{
-    background: var(--sidebar-color);
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    box-sizing: border-box; 
-    border-top-right-radius: 6px;
-    border-top-left-radius: 6px;   
-    z-index: 1000;
+background: var(--sidebar-color);
+position: fixed;
+width: 100%;
+bottom: 0;
+left: 0;
+box-sizing: border-box; 
+border-top-right-radius: 6px;
+border-top-left-radius: 6px;   
+z-index: 1000;
 }
 
 .title{
-    display: none;
+display: none;
 }
 
 
 .nav_list{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;  
-    width: 90%;
-    font-size: .9rem; 
-    margin: 0 auto;
+margin: 0;
+padding: 0;
+list-style: none;
+display: flex;
+justify-content: space-between;  
+width: 90%;
+font-size: .9rem; 
+margin: 0 auto;
 }
 
 
 .nav-container{
-    width: 90%;
-    max-width: 1200px;
-    margin:  0 auto;
+width: 90%;
+max-width: 1200px;
+margin:  0 auto;
 }
 
 .nav_item{
-    text-align: center;
-    margin-top: 10px;
-    color: #fff;
-    padding: 0 1.2em;
-    cursor: pointer;
-    
+text-align: center;
+margin-top: 10px;
+color: #fff;
+padding: 0 1.2em;
+cursor: pointer;
+
 }
 
 
 
 .nav_list .nav_item.active{
-    background-color: #fff;
-    position: relative;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px; 
-    padding: 0 1.5em;
+background-color: #fff;
+position: relative;
+border-top-right-radius: 10px;
+border-top-left-radius: 10px; 
+padding: 0 1.5em;
 }
 
 
- .active .tabs{
-    padding: .5em 0;
+.active .tabs{
+padding: .5em 0;
 }
 
 .active .tabs .desc{
-    color: #000;
+color: #000;
 }
 
 .active .tabs svg{
-    fill: var(--budget-ent);
+fill: var(--budget-ent);
 }
 
 .active::after{
-    position: absolute;
-    content: '';
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 5px;
-    background-color: var(--budget-bills);
+position: absolute;
+content: '';
+bottom: 0;
+left: 0;
+width: 100%;
+height: 5px;
+background-color: var(--budget-bills);
 }
 
 
 .tabs{
-    background: transparent;
-    border: none;
-    padding: .2em 0;
-    
+background: transparent;
+border: none;
+padding: .2em 0;
+
 
 }
 
 .tabs svg{
-    fill: #fff;
+fill: #fff;
 }
 
 .tabs .desc{
-    font-size: 1rem;
-    color: #fff;
-    display: none;
-    
+font-size: 1rem;
+color: #fff;
+display: none;
+
 }
 
 .sections{
-    padding: 3em 0;
-    transition: .5s ease;
+padding: 3em 0;
+transition: .5s ease;
 }
 
 .container{
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+width: 90%;
+max-width: 1200px;
+margin: 0 auto;
 }
 
 
 
 .minimize{
-    display: none;
+display: none;
 }
 .details > div{
-    border-radius: 20px;
+border-radius: 20px;
 }
 .min-container{
-    padding: 1rem 1.5rem;
-    
+padding: 1rem 1.5rem;
+
 }
 .current-balance{
-    background-color: var(--sidebar-color);
-    color: #fff;
+background-color: var(--sidebar-color);
+color: #fff;
 }
 
 .income, .expense{
-    background-color: #fff;
+background-color: #fff;
 }
 
 .detail + .detail{
-    margin-top: 20px;
+margin-top: 20px;
 }
 
 .section:not(.overview){
-    background: #fff;
-    padding: 1.8em 1.5em;
-    border-radius: 20px;
+background: #fff;
+padding: 1.8em 1.5em;
+border-radius: 20px;
 }
 
 .overview{
-    margin-bottom: 30px;
+margin-bottom: 30px;
 }
 
 .section{
-    margin-top: 20px;
+margin-top: 20px;
 }
 
 .section-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
 
 .view-more{
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+display: flex;
+align-items: center;
+cursor: pointer;
 }
 
 .total-saved{
-    background-color: var(--primary-color);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    border-radius: 10px;
+background-color: var(--primary-color);
+display: flex;
+justify-content: flex-start;
+align-items: center;
+border-radius: 10px;
 
 }
 
 .money-bag{
-    width: 50px;
-    height: 50px;
-    margin-right: 30px;
+width: 50px;
+height: 50px;
+margin-right: 30px;
+fill: #5d6b63;
 }
 
 .row{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+display: flex;
+justify-content: space-between;
+width: 100%;
 }
 
 .petition-one, .petition-two{
-    width: 40%;
+width: 40%;
 }
 
 .petition{
-    padding: 0 1em;
+padding: 0 1em;
 }
 
 .petition p{
-    white-space: nowrap;
-    font-size:var(--pg-font);
+white-space: nowrap;
+font-size:var(--pg-font);
 }
 
 .petition p h2{
-    font-size: .5rem;
+font-size: .5rem;
 }
 
 .savings{
-    border-left: 4px solid var(--budget-ent);
+border-left: 4px solid var(--budget-ent);
 }
 
 .ticket{
-    border-left: 4px solid var(--budget-personal);
+border-left: 4px solid var(--budget-personal);
 }
 
 .bills{
-    border-left: 4px solid var(--budget-bills);
+border-left: 4px solid var(--budget-bills);
 }
 
 .bed{
-    border-left: 4px solid var(--budget-dining);
+border-left: 4px solid var(--budget-dining);
 }
 
 .savings{
-    border-left: 4px solid var(--budget-ent);
+border-left: 4px solid var(--budget-ent);
 }
 
 .transaction-details{
-    margin: 0;
-    padding: 0;
-    list-style: none;
+margin: 0;
+padding: 0;
+list-style: none;
 }
 
 .trans-item{
-    border-bottom: 1px solid #ccc;
+border-bottom: 1px solid #ccc;
 }
 
 .trans-item:last-child{
-    border-bottom: none;
+border-bottom: none;
 }
 
 
 
 .name{
-    font-size: .9rem;
-     
+font-size: .9rem;
+    
 }
 .flex{
-    display: flex;
-    align-items: center;
+display: flex;
+align-items: center;
 }
 .name-image img{
-    width: 50px;
-    height:50px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-right: 20px;
+width: 50px;
+height:50px;
+object-fit: cover;
+border-radius: 50%;
+margin-right: 20px;
 }
 
- .date{
-    white-space: nowrap;
- }
+.date{
+white-space: nowrap;
+}
 
 
- .budget-info .budget_pie-chart{
-    position: relative;
-    width: 200px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: conic-gradient(#6a8e8e 0%, #6a8e8e 10%, #5ec8e5 10%, #5ec8e5 70%,#d64545 70%, #d64545 85%, #4a4a4a 85%, #4a4a4a 100% );
-    border-radius: 50%;
-    margin:  0 auto;
+.budget-info .budget_pie-chart{
+position: relative;
+width: 200px;
+height: 200px;
+display: flex;
+justify-content: center;
+align-items: center;
+background: conic-gradient(#6a8e8e 0%, #6a8e8e 10%, #5ec8e5 10%, #5ec8e5 70%,#d64545 70%, #d64545 85%, #4a4a4a 85%, #4a4a4a 100% );
+border-radius: 50%;
+margin:  0 auto;
 }
 
 .budget_pie-chart::after{
-    content: '';
-    position: absolute;
-    width: 70%;
-    height: 70%;
-    background-color: white;
-    border-radius: 50%;
+content: '';
+position: absolute;
+width: 70%;
+height: 70%;
+background-color: white;
+border-radius: 50%;
 }
 
 .budget_pie-chart > *{
-    z-index: 200;
-    text-align: center;
+z-index: 200;
+text-align: center;
 }
-    
 
+.rec-bills{
+position: relative;
+z-index: 900;
+}
 .bill-info{
-    padding: .5em 1em;
-    background-color: var(--primary-color);
-    border-radius: 10px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    position: relative;
-    display: flex;
-    align-items: center;
+padding: .5em 1em;
+background-color: var(--primary-color);
+border-radius: 10px;
+position: relative;
+display: flex;
+align-items: center;
+border: none;
 }
 
 .bill-info + .bill-info{
-    margin-top: 30px;
+margin-top: 30px;
 
 }
 
-.bill-info::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 5px;
-    background-color: var(--budget-ent);
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
+.bill-info::after {
+content: '';
+position: absolute;
+height: 100%;
+width: 100%;
+top: 0;
+left: -3px;
+border-radius: 10px;
+transition: .5s ease;
+z-index: -1;
+background-color: var(--budget-ent);
+    
 }
 
-.upcoming::before{
-    background: var(--budget-dining);
+
+
+.upcoming::after{
+background: var(--budget-dining);
 }
 
-.due::before{
-    background: var(--budget-bills);
+.due::after{
+background: var(--budget-bills);
 }
 
 .details h2, .total-saved h2, .budget_pie-chart h2{
-    font-size: 1.3rem;
+font-size: 1.3rem;
 }
- .total-saved, .budget-info, .bill_items, .transaction-details{
-    margin: 15px 0 5px 0;
-    
- }
+.total-saved, .budget-info, .bill_items, .transaction-details{
+margin: 15px 0 5px 0;
 
- .section-label{
+}
+
+.section-label{
     font-size: 1rem;
- }
+}
 
- .deposit{
-    color: var(--transaction-postive);
- }
+.deposit{
+color: var(--transaction-postive);
+}
 
- .withdrawal{
-    color: var(--transaction-negative);
- }
+.withdrawal{
+color: var(--transaction-negative);
+}
+
+.current-tab{
+    display: block;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    height: 30px;
+    
+
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #aaa;
+    border-radius: 30px;
+}
+
 
 @media (min-width: 700px){
 
@@ -575,13 +600,7 @@ header{
        margin: 0 auto;
     }
    
-    .pots_transactions{
-        width: 56%;
-    }
-
-    .budgets_rec-bills{
-        width: 42%;
-    }
+    
 
     .budget-info{
         display: flex;
@@ -596,6 +615,16 @@ header{
         display: flex;
         justify-content: space-between;
     }
+
+    .pots_transactions{
+        width: 56%;
+    }
+
+    .budgets_rec-bills{
+        width: 42%;
+    }
+
+    
     .total{
         display: block;
     }
